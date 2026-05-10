@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.Lab1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">#EAF0F7</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+</resources>

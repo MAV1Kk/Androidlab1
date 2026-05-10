@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF0F7"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Каталог літератури"
+            android:textColor="#17202A"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/appSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Оберіть автора та рік видання книги"
+            android:textColor="#5D6D7E"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="28dp" />
+
+        <LinearLayout
+            android:id="@+id/authorBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:layout_marginBottom="18dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Автор книги"
+                android:textColor="#1B2631"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Виберіть потрібного автора зі списку"
+                android:textColor="#7B7D7D"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <Spinner
+                android:id="@+id/writerList"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#F4F6F7"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yearBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:layout_marginBottom="22dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Рік видання"
+                android:textColor="#1B2631"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Позначте один із доступних варіантів"
+                android:textColor="#7B7D7D"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <RadioGroup
+                android:id="@+id/publicationYears"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/year2017"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="2017"
+                    android:textColor="#17202A"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/year2020"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="2020"
+                    android:textColor="#17202A"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/year2024"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="2024"
+                    android:textColor="#17202A"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/resultButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Сформувати результат"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2E86C1"
+            android:layout_marginBottom="22dp" />
+
+        <TextView
+            android:id="@+id/selectedInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Тут буде показано інформацію про вибрану книгу."
+            android:textColor="#17202A"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:minHeight="120dp"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+
+</ScrollView>
